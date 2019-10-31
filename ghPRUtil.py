@@ -19,10 +19,6 @@ def getRepo(branch):
         return 'liferay-portal'
     return 'liferay-portal-ee'
 
-def getRecentCommit(offset):
-    byte = subprocess.check_output("git log --skip=" + str(offset) + " -1 --pretty=%B",shell=True)
-    return byte.decode('utf8')
-
 def submitPR(reviewer, branch, ticketLink):
     repo = getRepo(branch)
 

@@ -1,10 +1,14 @@
-import re
+import re, subprocess
 
 branchToTicket = {
     "lrqa" : "LRQA",
     "qa" : "LRQA",
     "lps" : "LPS",
 }
+
+def getRecentCommit(offset):
+    byte = subprocess.check_output("git log --skip=" + str(offset) + " -1 --pretty=%B",shell=True)
+    return byte.decode('utf8')
 
 class TicketNumber:
     def __formatTokens(self,tokens):
