@@ -55,3 +55,9 @@ Create an alias that can call ghPR.py because it performs actions on the repo wi
 **Command**: `ghPR vicnate5 7.2.x`
 
 **Expected Result**: Since we can't fallback to the most recent commit due to its incorrect format, we will fall back to the next most recent commit instead.
+
+
+# Visual
+
+![Example1](https://raw.githubusercontent.com/kyle-miho/ghPRext/master/Example1.png)
+![Example2](https://raw.githubusercontent.com/kyle-miho/ghPRext/master/Example2.png)
