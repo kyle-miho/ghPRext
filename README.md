@@ -12,7 +12,6 @@ npm install -g gh gh-jira
 
 Populate ghPR.py with the github and jira usernames of the people you send pull requests to
 example: 
-# THE PEOPLE YOU SEND PRS TO #
 reviewersDict = {
     'brianchandotcom':'brian.chan',
     'kyle-miho':'kyle.miho',
